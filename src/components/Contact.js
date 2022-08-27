@@ -56,7 +56,7 @@ export default function Contact() {
         <p>Designed and developed by Sai Praneeth.</p>
         <p>
           Built with <span className="footerTextColor">ReactJS, </span>Deployed
-          in <span className="footerTextColor">Heroku.</span>
+          in <span className="footerTextColor">Netlify.</span>
         </p>
       </footer>
     </>
