@@ -1,38 +1,253 @@
-.App {
-  text-align: center;
+::-webkit-scrollbar {
+    width: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-thumb {
+    background: #8ffbf7;
+    border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-thumb:hover {
+    background: darkgreen;
+    width: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* sidebar section */
+.drawerStyle {
+    background-color: black;
+    color: white;
+    height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drawerItems:hover {
+    color: rgb(0, 242, 255)
+}
+
+button:hover {
+    color: rgb(0, 242, 255);
+}
+
+.homeContent {
+    display: flex;
+    padding: 4vh;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .homeContent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 600px) {
+    .image {
+        display: none;
+    }
+}
+
+/* SocialIons section */
+.socialIons {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ions:hover {
+    background-color: rgba(37, 37, 37, 0.61);
+    border-radius: 60px;
+}
+
+.ions {
+    padding: 10px;
+}
+
+/* About Section 79-166*/
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.progress-container {
+    width: 100%;
+    height: 4px;
+    background: #ccc;
+}
+
+@media (max-width: 600px) {
+    .progress-container {
+        display: none;
+    }
+}
+
+.progress-bar {
+    height: 4px;
+    background: #62ff00;
+    width: 0%;
+}
+
+.profilePicContent {
+    margin: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePicContent>div {
+    padding: 10vh;
+}
+
+.headings {
+    font-size: 50px;
+    text-align: center;
+}
+
+.aboutDescription {
+    max-width: 600px;
+    text-align: justify;
+    text-indent: 15vh;
+    line-height: 1.7;
+    font-size: larger;
+}
+
+.degree {
+    color: #8ffbf7;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.sizing {
+    font-size: 1.25em;
+}
+
+.upArrow {
+    display: flex;
+    padding: 40px;
+    margin-right: 40px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.upArrow>a {
+    color: white;
+}
+
+
+
+/* Skills section */
+.skillsIcons {
+    height: 90px;
+    width: 90px;
+}
+
+.skillsContent {
+    margin-top: 5vh;
+    padding: 0 20vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+picture {
+    margin: 5vh;
+    padding: 1vh;
+}
+
+picture:hover {
+    cursor: pointer;
+    background-color: rgba(40, 40, 40, 0.244);
+}
+
+/* Education section */
+.eduAndExp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.eduTitles {
+    margin-top: 120px;
+}
+
+.eduTitles>p>a {
+    color: #8ffbf7;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.eduTitles>p>a:hover {
+    color: darkgreen;
+}
+
+.educationContent {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.eduIconAndTitle {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.eduIconAndTitle>div {
+    margin-right: 20px;
+}
+
+.eduIconAndTitle>div>h2 {
+    font-size: 2em;
+}
+
+hr {
+    width: 100%;
+}
+
+/* Contact Section */
+
+.contactdetails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1vh;
+}
+
+.contactdetails>div {
+    background-color: rgba(128, 128, 128, 0.096);
+    padding: 10px 50px;
+    margin: 10px;
+    width: 250px;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footerTextColor {
+    color: #8ffbf7;
+}
+
+.textCenter {
+    text-align: center;
 }
