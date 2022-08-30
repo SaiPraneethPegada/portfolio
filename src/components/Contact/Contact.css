@@ -1,0 +1,26 @@
+.contactdetails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1vh;
+}
+
+.contactdetails>div {
+    background-color: rgba(97, 97, 97, 0.051);
+    padding: 10px 50px;
+    margin: 10px;
+    width: 250px;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footerTextColor {
+    color: #8ffbf7;
+}

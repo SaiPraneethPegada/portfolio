@@ -1,12 +1,11 @@
 import React from "react";
-import NavBar from "./Navbar";
-import programmer from "../images/programmer.png";
-import SocialIcons from "../helpers/SocialIcons";
+import programmer from "../../images/programmer.png";
+import SocialIcons from "../SocialIcons";
+import "./Home.css";
 
 export default function Home() {
   return (
     <>
-      <NavBar />
       <div className="homeContent">
         <main style={{ fontSize: "large", padding: "10vh" }}>
           <div>

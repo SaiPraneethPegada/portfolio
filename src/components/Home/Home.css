@@ -1,0 +1,35 @@
+/* sidebar section */
+.drawerStyle {
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+.drawerItems:hover {
+    color: rgb(0, 242, 255)
+}
+
+button:hover {
+    color: rgb(0, 242, 255);
+}
+
+.homeContent {
+    display: flex;
+    padding: 4vh;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .homeContent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 600px) {
+    .image {
+        display: none;
+    }
+}

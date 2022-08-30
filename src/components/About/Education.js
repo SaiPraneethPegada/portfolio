@@ -1,8 +1,10 @@
 import React from "react";
 
-import cap from "../images/cap.png";
-import exp from "../images/exp.png";
-import school from "../images/school.png";
+import cap from "../../images/cap.png";
+import exp from "../../images/exp.png";
+import school from "../../images/school.png";
+
+import "./About.css";
 
 export default function Education() {
   const schools = [

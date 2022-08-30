@@ -1,10 +1,10 @@
 import React from "react";
 
-import NavBar from "./Navbar";
-import SocialIcons from "../helpers/SocialIcons";
+import "./Contact.css";
+import SocialIcons from "../SocialIcons";
 
-import email from "../images/email.png";
-import phone from "../images/phone.png";
+import email from "../../images/email.png";
+import phone from "../../images/phone.png";
 
 export default function Contact() {
   const info = [
@@ -22,7 +22,6 @@ export default function Contact() {
   return (
     <>
       <div>
-        <NavBar />
         <h1 className="headings">Contact Me</h1>
         <div className="contactdetails">
           {info.map((item, index) => (
@@ -45,8 +44,11 @@ export default function Contact() {
             <p className="sizing">
               Feel free to get in touch and talk more about your projects.
             </p>
-            <p style={{ textAlign: "right" }} className="sizing">
-              -I can't wait to hear all about it.
+            <p style={{ textAlign: "center" }} className="sizing">
+              I can't wait to hear all about it.
+            </p>
+            <p style={{ textAlign: "right", fontStyle: "italic" }} className="sizing"> 
+              -Praneeth.
             </p>
           </div>
           <SocialIcons />

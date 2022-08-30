@@ -1,0 +1,85 @@
+.profilePicContent {
+    margin: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePicContent>div {
+    padding: 10vh;
+}
+
+.headings {
+    font-size: 50px;
+    text-align: center;
+}
+
+.aboutDescription {
+    max-width: 600px;
+    text-align: justify;
+    text-indent: 15vh;
+    line-height: 1.7;
+    font-size: larger;
+}
+
+.upArrow {
+    display: flex;
+    padding: 40px;
+    margin-right: 40px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.upArrow>a {
+    color: white;
+}
+
+/* Education section */
+.eduAndExp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.eduTitles {
+    margin-top: 120px;
+}
+
+.eduTitles>p>a {
+    color: #8ffbf7;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.eduTitles>p>a:hover {
+    color: darkgreen;
+}
+
+.educationContent {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.eduIconAndTitle {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.eduIconAndTitle>div {
+    margin-right: 20px;
+}
+
+.eduIconAndTitle>div>h2 {
+    font-size: 2em;
+}
+
+hr {
+    width: 100%;
+}

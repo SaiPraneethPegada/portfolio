@@ -1,9 +1,10 @@
 import React from "react";
-import Education from "../helpers/Education";
-import ProgressBar from "../helpers/ProgressBar";
-import arrow from "../images/arrow.png";
-import psp from "../images/psp.png";
-import upArrow from "../images/upArrow.png";
+import Education from "./Education";
+import ProgressBar from "../ProgressBar";
+import arrow from "../../images/arrow.png";
+import psp from "../../images/psp.png";
+import upArrow from "../../images/upArrow.png";
+import "./About.css";
 
 export default function About() {
   return (
