@@ -1,6 +1,4 @@
 import React from 'react'
-import NavBar from "../components/Navbar";
-
 
 export default function ProgressBar() {
     window.onscroll = function () {
@@ -18,7 +16,6 @@ export default function ProgressBar() {
       }
   return (
     <div className="header">
-      <NavBar />
       <div className="progress-container">
         <div className="progress-bar" id="myBar"></div>
       </div>

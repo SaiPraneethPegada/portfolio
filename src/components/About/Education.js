@@ -64,6 +64,8 @@ export default function Education() {
       </div>
       <div className="educationContent">
         <div className="main" id="section1">
+          <p style={{ visibility: "hidden" }}>.</p>
+          <br />
           <h1 className="headings">Education</h1>
           {schools.map((school, index) => (
             <div key={index}>

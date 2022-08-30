@@ -21,8 +21,8 @@
 /* About Section 79-166*/
 
 .header {
-    position: fixed;
-    top: 0;
+    position: sticky;
+    top: 65px;
     z-index: 1;
     width: 100%;
 }
