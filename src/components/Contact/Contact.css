@@ -8,9 +8,23 @@
 
 .contactdetails>div {
     background-color: rgba(97, 97, 97, 0.051);
-    padding: 10px 50px;
+    padding: 1vw 5vw;
     margin: 10px;
-    width: 250px;
+    width: 15vw;
+}
+
+#text-wrap {
+    display: block;
+    width: 15vw;
+    overflow: auto;
+}
+
+#text-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.textCenter > p > img {
+    width: 6vw;
 }
 
 .footerContent {

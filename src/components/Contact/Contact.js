@@ -30,7 +30,7 @@ export default function Contact() {
                 <img src={item.image} alt={item.title} />
               </p>
               <p className="sizing">{item.title}</p>
-              <p>{item.value}</p>
+              <p id="text-wrap">{item.value}</p>
             </div>
           ))}
         </div>
