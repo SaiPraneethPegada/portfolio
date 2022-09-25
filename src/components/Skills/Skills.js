@@ -1,5 +1,4 @@
 import React from "react";
-import "./Skills.css";
 
 import bootstrap from "../../images/bootstrap.png";
 import css from "../../images/css3.png";
@@ -15,69 +14,65 @@ import react from "../../images/react.png";
 // import arrow from '../../images/arrow.png';
 
 export default function Skills() {
-  const skills = [
-    {
-      image: html,
-      name: "HTML",
-    },
-    {
-      image: css,
-      name: "CSS",
-    },
-    {
-      image: js,
-      name: "JavaScript",
-    },
-    {
-      image: bootstrap,
-      name: "Bootstrap",
-    },
-    {
-      image: mui,
-      name: "MUI",
-    },
-    {
-      image: react,
-      name: "ReactJS",
-    },
-    {
-      image: mongo,
-      name: "MongoDB",
-    },
-    {
-      image: node,
-      name: "NodeJS",
-    },
-    {
-      image: express,
-      name: "ExpressJS",
-    },
-    {
-      image: github,
-      name: "Github",
-    },
-    {
-      image: npm,
-      name: "Node Package Manager",
-    },
-  ];
+    const skills = [
+        {
+            image: html,
+            name: "HTML",
+        },
+        {
+            image: css,
+            name: "CSS",
+        },
+        {
+            image: js,
+            name: "JavaScript",
+        },
+        {
+            image: bootstrap,
+            name: "Bootstrap",
+        },
+        {
+            image: mui,
+            name: "MUI",
+        },
+        {
+            image: react,
+            name: "ReactJS",
+        },
+        {
+            image: mongo,
+            name: "MongoDB",
+        },
+        {
+            image: node,
+            name: "NodeJS",
+        },
+        {
+            image: express,
+            name: "ExpressJS",
+        },
+        {
+            image: github,
+            name: "Github",
+        },
+        {
+            image: npm,
+            name: "Node Package Manager",
+        },
+    ];
 
-  return (
-    <div>
-      <div className="skillsContent">
-        {skills.map((skill, index) => (
-          <picture key={index}>
-            <img
-              className="skillsIcons"
-              src={skill.image}
-              alt={skill.name}
-              title={skill.name}
-            />
-            {/* <p className="hideName">{skill.name}</p> */}
-          </picture>
-        ))}
-      </div>
-      {/* <div style={{display: "flex", justifyContent: "center"}}><img src={arrow} alt="arrow" /></div> */}
-    </div>
-  );
+    return (
+        <div className="skillsContent mt-5 d-flex flex-wrap justify-content-center">
+            {skills.map((skill, index) => (
+                <picture key={index} className="m-4 p-3">
+                    <img
+                        className="skillsIcons"
+                        src={skill.image}
+                        alt={skill.name}
+                        title={skill.name}
+                    />
+                </picture>
+            ))}
+        </div>
+    );
 }
