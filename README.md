@@ -1,2 +1,3 @@
 ## Personal Portfolio
-> Sai Praneeth
+
+>Deployed URL: https://stellar-sundae-dbda28.netlify.app/
