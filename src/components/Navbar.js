@@ -63,7 +63,7 @@ function NavBar(props) {
                 <AppBar
                     component="nav"
                     style={{
-                        backgroundColor: "#000e1c",
+                        backgroundColor: "#000b15",
                         borderBottom: "1px solid gray",
                     }}>
                     <Toolbar>

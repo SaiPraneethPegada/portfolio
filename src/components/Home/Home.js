@@ -4,8 +4,8 @@ import landing from "../../images/landing.png";
 
 export default function Home() {
     return (
-        <div className="homeContent d-flex align-items-center p-5">
-            <main className="p-5 m-3">
+        <div className="homeContent d-flex align-items-center my-5 p-5">
+            <main className="m-3">
                 <div>
                     <h3 style={{ color: "#8ffbf7" }}>Hey there!, I'm-</h3>
                     <h1 className="" style={{ fontSize: "10vh" }}>

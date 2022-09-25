@@ -63,7 +63,7 @@ export default function Education() {
                 ))}
             </div>
             <div className="mt-5 d-flex flex-column flex-wrap align-content-around">
-                <div className="main" id="section1">
+                <div className="main m-3" id="section1">
                     <p style={{ visibility: "hidden" }}>.</p>
                     <br />
                     <h1 className="headings">Education</h1>
@@ -90,7 +90,7 @@ export default function Education() {
                     ))}
                 </div>
 
-                <div className="main" id="section2">
+                <div className="main m-3" id="section2">
                     <h1 className="headings my-5">Experience</h1>
                     {workPlace.map((work, index) => (
                         <div key={index}>
