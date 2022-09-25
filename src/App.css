@@ -47,6 +47,10 @@ button:hover {
 }
 
 @media (max-width: 769px) {
+    .homeContent {
+        padding: 0;
+    }
+
     .image {
         display: none;
     }

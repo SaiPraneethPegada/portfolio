@@ -145,7 +145,7 @@ export default function Contact() {
                 </div>
             </div>
 
-            <footer className="text-center" style={{ marginTop: "15vh" }}>
+            <footer className="text-center pb-2" style={{ marginTop: "15vh" }}>
                 <p>Designed and developed by Sai Praneeth.</p>
                 <p>
                     Built with{" "}
