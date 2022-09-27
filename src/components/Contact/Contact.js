@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 
 import SocialIcons from "../../helpers/SocialIcons";
 
-import email from "../../images/email.png";
+import emailIcon from "../../images/email.png";
 import phone from "../../images/phone.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -16,7 +16,7 @@ export default function Contact() {
             value: "+91 7386000126",
         },
         {
-            image: email,
+            image: emailIcon,
             title: "Email",
             value: "saipraneethpegada@gmail.com",
         },
@@ -39,6 +39,7 @@ export default function Contact() {
                     console.log(result.text);
                     if (result.status === 200) {
                         toast.success("Message Sent!");
+                        form.current.reset();
                     } else {
                         toast.error("Try Again");
                     }
@@ -67,7 +68,7 @@ export default function Contact() {
                                 <input
                                     type="text"
                                     id="name"
-                                    name="user_name"
+                                    name="name"
                                     className="form-control rounded-2"
                                     placeholder="Your name please!"
                                     required
@@ -80,7 +81,7 @@ export default function Contact() {
                                 <input
                                     type="email"
                                     id="email"
-                                    name="user_email"
+                                    name="email"
                                     className="form-control rounded-2"
                                     placeholder="Your email"
                                     required
@@ -97,6 +98,7 @@ export default function Contact() {
                                     cols="30"
                                     className="form-control rounded-2"
                                     placeholder="Type your message here..."
+                                    required
                                 />
                             </div>
                             <div>
