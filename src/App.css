@@ -87,7 +87,7 @@ button:hover {
 
 .eduTitles>div>a {
     color: #8ffbf7;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .eduTitles>div>a:hover {
@@ -122,7 +122,7 @@ button:hover {
 
 .degree {
     color: #8ffbf7;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     margin: 20px 0;
 }
 
