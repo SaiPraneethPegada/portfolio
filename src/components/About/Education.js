@@ -28,6 +28,7 @@ export default function Education() {
       degree: "Aircraft Maintenance Engineering(BSc.)",
       place: "Hyderabad, Telangana.",
       year: "2017 - 2021(March)",
+      aggregate: "Percentage - 83%",
     },
     {
       image: school,
@@ -35,6 +36,7 @@ export default function Education() {
       degree: "Intermediate, M.P.C",
       place: "Hyderabad, Telangana.",
       year: "2015 - 2017",
+      aggregate: "Percentage - 94.3%",
     },
     {
       image: school,
@@ -42,6 +44,7 @@ export default function Education() {
       degree: "SSC",
       place: "Mancherial, Telangana.",
       year: "2015 (completion)",
+      aggregate: "CGPA - 9.7",
     },
   ];
 
@@ -95,7 +98,7 @@ export default function Education() {
                   {school.name}, {school.place}
                 </h5>
                 <p>{school.course}</p>
-                <p className="sizing"></p>
+                <p className="sizing">{school.aggregate}</p>
                 <p className="sizing">{school.year}</p>
               </div>
               <hr className="w=100" />
