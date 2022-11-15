@@ -74,16 +74,16 @@ function Projects() {
                         </Tooltip>
                       }
                     >
-                      <Button variant="light">
-                        <a href={item.github} target="_blank" rel="noreferrer">
+                      <a href={item.github} target="_blank" rel="noreferrer">
+                        <Button variant="light">
                           <img
                             src={github_icon}
                             alt="github_icon"
                             width={"25px"}
                             height={"25px"}
                           />
-                        </a>
-                      </Button>
+                        </Button>
+                      </a>
                     </OverlayTrigger>
                     <OverlayTrigger
                       key={"bottom2"}
@@ -94,16 +94,16 @@ function Projects() {
                         </Tooltip>
                       }
                     >
-                      <Button variant="light">
-                        <a href={item.live} target="_blank" rel="noreferrer">
+                      <a href={item.live} target="_blank" rel="noreferrer">
+                        <Button variant="light">
                           <img
                             src={live}
                             alt="live"
                             width={"25px"}
                             height={"25px"}
                           />
-                        </a>
-                      </Button>
+                        </Button>
+                      </a>
                     </OverlayTrigger>
                   </div>
                 </div>
