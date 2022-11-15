@@ -26,7 +26,7 @@ function Projects() {
       img: foodApp,
       title: "Food Delivery",
       description:
-        "Full Stack food ordering app with payment integration and has User and \n Admin role.",
+        "Full Stack Food ordering app with integration of third-party payment processors, developed with User and \n Admin role.",
       tech: ["MongoDB |", "ExpressJS |", "React |", "Context-API"],
       github: "https://github.com/SaiPraneethPegada/Food-Delivery-Frontend",
       live: "https://food-delivery-fe.netlify.app",

@@ -113,7 +113,7 @@ export default function Education() {
           {training.map((school, index) => (
             <div key={index}>
               <div className="eduIconAndTitle mt-5 d-flex align-items-center">
-                <div className="mx-2 pe-3">
+                <div className="mx-2 pe-2">
                   <img src={school.image} alt="icons" />
                 </div>
                 <div>
@@ -152,7 +152,6 @@ export default function Education() {
                 <h5>
                   {work.company}, {work.place}
                 </h5>
-                <p className="sizing"></p>
                 <p className="sizing">{work.year}</p>
               </div>
               <hr className="w-100" />
