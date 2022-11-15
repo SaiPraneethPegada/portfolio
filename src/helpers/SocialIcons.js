@@ -37,16 +37,16 @@ export default function SocialIcons() {
         </a>
       </div>
 
-      <Button variant="light" className="ms-2 h-50 rounded-5 ">
-        <a
-          href="https://drive.google.com/file/d/1Mwx_gys01OTFEJ2yDJvYFtgxUI9Qt0-m/view?usp=share_link"
-          target="_blank"
-          rel="noreferrer"
-          className="text-black text-decoration-none"
-        >
+      <a
+        href="https://drive.google.com/file/d/1Mwx_gys01OTFEJ2yDJvYFtgxUI9Qt0-m/view?usp=share_link"
+        target="_blank"
+        rel="noreferrer"
+        className="text-black text-decoration-none"
+      >
+        <Button variant="light" className="ms-2 h-50 rounded-5 ">
           Resume
-        </a>
-      </Button>
+        </Button>
+      </a>
     </div>
   );
 }
