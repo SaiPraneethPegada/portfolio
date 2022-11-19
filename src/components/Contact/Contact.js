@@ -109,7 +109,10 @@ export default function Contact() {
           </div>
           <div className="d-flex flex-column flex-wrap justify-content-center m-3 p-3">
             {info.map((item, index) => (
-              <div className="p-2 m-3" key={index}>
+              <div
+                className="p-2 m-3 d-flex flex-wrap align-items-center"
+                key={index}
+              >
                 <img src={item.image} alt={item.title} className="w-5" />
                 <span className="mx-3 fs-5"> {item.value}</span>
               </div>

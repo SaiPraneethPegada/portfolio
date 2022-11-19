@@ -130,7 +130,7 @@ function Projects() {
                   </div>
                 </div>
                 <hr />
-                <Card.Text>{item.description}</Card.Text>
+                <Card.Text>{item.description}</Card.Text>                                             
                 <div className="d-flex flex-wrap align-items-center">
                   Tech Stack used-
                   {item.tech.map((e) => {

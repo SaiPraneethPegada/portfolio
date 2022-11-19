@@ -4,7 +4,7 @@ import landing from "../../images/landing.png";
 
 export default function Home() {
   return (
-    <div className="homeContent d-flex align-items-center my-5 p-5">
+    <div className="homeContent d-flex align-items-center p-5">
       <main className="m-3">
         <div>
           <h3 style={{ color: "#8ffbf7" }}>Hey there!, I'm-</h3>
@@ -12,14 +12,19 @@ export default function Home() {
             Sai Praneeth.
           </h1>
         </div>
-        <div className="mb-5">
-          <h3>
+        <div className="mb-5 ">
+          <h3
+            style={{
+              lineHeight: 1.5,
+              textAlign: "justify",
+              textJustify: "inter-word",
+            }}
+          >
             I'm a MERN Stack Developer.{" "}
             <span
               style={{
                 color: "gray",
                 fontSize: "3vh",
-                lineHeight: 1.75,
               }}
             >
               A dedicated developer with an interest in latest technologies and

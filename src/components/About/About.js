@@ -1,15 +1,15 @@
 import React from "react";
 
 import Education from "./Education";
-import ProgressBar from "../../helpers/ProgressBar";
 import arrow from "../../images/arrow.png";
 import psp from "../../images/psp2.jpg";
 import upArrow from "../../images/upArrow.png";
+// import ProgressBar from "../../helpers/ProgressBar";
 
 export default function About() {
   return (
     <div>
-      <ProgressBar />
+      {/* <ProgressBar /> */}
       <div>
         <div
           className="profilePicContent d-flex justify-content-center align-items-center flex-wrap m-5"

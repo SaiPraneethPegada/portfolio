@@ -45,7 +45,7 @@ button:hover {
 }
 
 .homeContent {
-    padding: 4vh;
+    margin: 50px 0;
 }
 
 @media (max-width: 800px) {
@@ -53,7 +53,7 @@ button:hover {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        flex-direction: column-reverse;
+        margin-top: 0;
     }
 }
 
@@ -162,6 +162,18 @@ button:hover {
 
 .skillsContent {
     padding: 0 20vw;
+}
+
+@media (768px < width < 1025px) {
+    .skillsContent {
+        padding: 0 8vw;
+    }
+}
+
+@media (width < 800px) {
+    .skillsContent {
+        padding: 0
+    }
 }
 
 picture {

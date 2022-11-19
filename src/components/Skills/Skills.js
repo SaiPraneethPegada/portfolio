@@ -69,7 +69,7 @@ export default function Skills() {
   return (
     <div className="skillsContent mt-5 d-flex flex-wrap justify-content-center">
       {skills.map((skill, index) => (
-        <picture key={index} className="m-4 p-3">
+        <picture key={index} className="skillsPicture m-4 p-3">
           <img
             className="skillsIcons"
             loading="lazy"
