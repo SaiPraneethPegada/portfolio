@@ -9,6 +9,7 @@ import live from "../../images/live.png";
 import stack from "../../images/SOf.jpg";
 import krm from "../../images/KRM.jpg";
 import foodApp from "../../images/FA.jpg";
+import chatApp from "../../images/chatApp.jpg";
 
 function Projects() {
   const data = [
@@ -17,7 +18,7 @@ function Projects() {
       title: "Stack Overflow Clone",
       description:
         "Clone project of famous Q/A website with features like posting a unique \n question, answering and like a question, increment of views, login/logout \n with full Authentication system.",
-      tech: ["MongoDB |", "ExpressJS |", "React |", "Redux-Toolkit"],
+      tech: ["MongoDB |", "ExpressJS |", "React |", "Redux-Toolkit."],
       github:
         "https://github.com/SaiPraneethPegada/stack-overflow-clone-client",
       live: "https://stack-overflow-clone-client.netlify.app",
@@ -27,7 +28,13 @@ function Projects() {
       title: "Food Delivery",
       description:
         "Full Stack Food ordering app with integration of third-party payment processors, developed with User and \n Admin role.",
-      tech: ["MongoDB |", "ExpressJS |", "React |", "Context-API"],
+      tech: [
+        "MongoDB |",
+        "ExpressJS |",
+        "React |",
+        "Context-API |",
+        "Razorpay.",
+      ],
       github: "https://github.com/SaiPraneethPegada/Food-Delivery-Frontend",
       live: "https://food-delivery-fe.netlify.app",
     },
@@ -35,11 +42,26 @@ function Projects() {
       img: krm,
       title: "Kitchen Recipe Management",
       description:
-        "Food Recipes posting application where an individual can post, view, favourite, comment and share recipe.",
-      tech: ["MongoDB |", "ExpressJS |", "React |", "Context-API"],
+        "Food Recipes posting application where an individual can post, view, favorite, comment and share recipe.",
+      tech: ["MongoDB |", "ExpressJS |", "React |", "Context-API."],
       github:
         "https://github.com/SaiPraneethPegada/Kitchen-Recipe-Management-Frontend",
       live: "https://kitchen-recipe-management-fe.netlify.app",
+    },
+    {
+      img: chatApp,
+      title: "Chat App",
+      description:
+        "A Full stack Chat App developed with Socket.io for real time one on one communication and key features include new message notification, Profile pic upload(cloudinary.com), search users.",
+      tech: [
+        "MongoDB |",
+        "ExpressJS |",
+        "React |",
+        "Context-API |",
+        "Socket.io",
+      ],
+      github: "https://github.com/SaiPraneethPegada/Chat-App-Frontend",
+      live: "https://chat-app-fe.netlify.app",
     },
   ];
 
@@ -109,11 +131,11 @@ function Projects() {
                 </div>
                 <hr />
                 <Card.Text>{item.description}</Card.Text>
-                <div className="d-flex flex-wrap">
-                  Tech used-
+                <div className="d-flex flex-wrap align-items-center">
+                  Tech Stack used-
                   {item.tech.map((e) => {
                     return (
-                      <Card.Text className="mx-1 fw-bolder" key={e}>
+                      <Card.Text className="mx-1 fw-bolder mb-0" key={e}>
                         {e}
                       </Card.Text>
                     );

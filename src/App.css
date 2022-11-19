@@ -1,9 +1,8 @@
 ::-webkit-scrollbar {
-    display: none;
-    /* width: 5px; */
+    width: 5px;
 }
 
-/* 
+
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
@@ -17,7 +16,17 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #5ba19f;
     width: 20px;
-} */
+}
+
+.nav_link {
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    color: rgb(0, 242, 255);
+    text-decoration: none
+}
 
 .App {
     width: 100%;

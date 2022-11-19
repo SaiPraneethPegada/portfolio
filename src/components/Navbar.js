@@ -13,7 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = ["home", "about", "skills", "projects", "contact"];
@@ -63,7 +63,7 @@ function NavBar(props) {
           component="nav"
           style={{
             backgroundColor: "#000b15",
-            borderBottom: "1px solid gray",
+            borderBottom: "0.5px solid gray",
           }}
         >
           <Toolbar>
@@ -100,7 +100,14 @@ function NavBar(props) {
                   onClick={() => navigate(`/${item}`)}
                   style={{ padding: "15px" }}
                 >
-                  {item}
+                  {/* {item} */}
+                  <NavLink
+                    className="nav_link"
+                    activeclassname="active"
+                    to={`${item}`}
+                  >
+                    {item}
+                  </NavLink>
                 </Button>
               ))}
             </Box>

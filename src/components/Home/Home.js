@@ -35,6 +35,7 @@ export default function Home() {
         <img
           src={landing}
           alt="Cartoon"
+          loading="lazy"
           style={{
             borderRadius: "20%",
             width: "500px",
