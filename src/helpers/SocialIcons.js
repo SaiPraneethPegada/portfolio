@@ -38,7 +38,7 @@ export default function SocialIcons() {
       </div>
 
       <a
-        href="https://drive.google.com/file/d/1Mwx_gys01OTFEJ2yDJvYFtgxUI9Qt0-m/view?usp=share_link"
+        href="https://drive.google.com/file/d/1zGDQaFubSvMtxLzNd8BHewju00gcFU_L/view?usp=drivesdk"
         target="_blank"
         rel="noreferrer"
         className="text-black text-decoration-none"
