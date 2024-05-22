@@ -65,6 +65,9 @@ button:hover {
     .image {
         display: none;
     }
+    .aboutSection {
+        margin: 0 1rem;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -78,6 +81,12 @@ button:hover {
 
     .contactContainer > div {
         margin: 3rem 0;
+    }
+    .profilePicContent {
+        margin: 3rem;
+    }
+    .aboutSection {
+        margin: 0 3rem;
     }
 }
 

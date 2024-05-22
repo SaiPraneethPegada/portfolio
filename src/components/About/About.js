@@ -12,7 +12,7 @@ export default function About() {
       {/* <ProgressBar /> */}
       <div>
         <div
-          className="profilePicContent d-flex justify-content-center align-items-center flex-wrap m-5"
+          className="profilePicContent d-flex justify-content-center align-items-center flex-wrap"
           id="mainSection"
         >
           <picture className="p-5 profilepic">
@@ -27,7 +27,7 @@ export default function About() {
               }}
             />
           </picture>
-          <div className="mx-5">
+          <div className="aboutSection">
             <h1 className="headings text-center my-4">About Me</h1>
             <p
               className="aboutDescription lh-lg"

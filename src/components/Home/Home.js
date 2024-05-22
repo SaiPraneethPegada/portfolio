@@ -24,7 +24,7 @@ export default function Home() {
             <span
               style={{
                 color: "gray",
-                fontSize: "3vh",
+                fontSize: "1.25rem",
               }}
             >
               A dedicated developer with an interest in latest technologies and
