@@ -66,7 +66,7 @@ function Projects() {
   ];
 
   return (
-    <div>
+    <div className='projectsContainer'>
       <h2 className="text-center">Projects</h2>
       <div className="container-fluid d-flex flex-wrap justify-content-center ">
         {data.map((item) => {

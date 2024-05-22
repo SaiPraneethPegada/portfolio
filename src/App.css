@@ -67,6 +67,20 @@ button:hover {
     }
 }
 
+@media screen and (min-width: 600px) {
+    .projectsContainer {
+        padding-top: 3rem;
+    }
+
+    .contactContainer {
+        margin: 3rem;
+    }
+
+    .contactContainer > div {
+        margin: 3rem 0;
+    }
+}
+
 
 /* About Section 79-166*/
 

@@ -2,7 +2,7 @@ import React from "react";
 
 import Education from "./Education";
 import arrow from "../../images/arrow.png";
-import psp from "../../images/psp2.jpg";
+import psp from "../../images/psp3.jpg";
 import upArrow from "../../images/upArrow.png";
 // import ProgressBar from "../../helpers/ProgressBar";
 
@@ -22,8 +22,8 @@ export default function About() {
               loading="lazy"
               className="rounded"
               style={{
-                width: "330px",
-                height: "330px",
+                width: "auto",
+                height: "25rem",
               }}
             />
           </picture>
@@ -34,12 +34,13 @@ export default function About() {
               style={{ textAlign: "justify" }}
             >
               I'm a{" "}
-              <span style={{ color: "#8ffbf7" }}>Junior Web-Developer</span>,
-              career pivoting from Aviation Industry. My previous career as a
-              Reliability Engineer allowed me to be collaborative and creative,
-              which is something I now enjoy bringing to my code. I am
-              empathetic, approachable and an active listener, traits that allow
-              me to create great projects and build relationships along the way.
+              <span style={{ color: "#8ffbf7" }}>Software Engineer</span>{' '}
+              with 3 years of experience, driven by a passion for learning new technologies and tools.
+              Proficient in JavaScript, with a strong foundation in web development libraries such as ReactJS.
+              Adaptable to changing project requirements and excels in dynamic work settings.
+              Demonstrated ability to quickly grasp and apply new tools and technologies to achieve project objectives effectively.
+              Additionally, my experience at a startup company has equipped me with the agility to
+              learn new things rapidly and adapt to different work settings, enhancing my versatility in approaching projects.
             </p>
           </div>
         </div>

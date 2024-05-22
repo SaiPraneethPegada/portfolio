@@ -11,6 +11,7 @@ export default function SocialIcons() {
 
   const urls = [
     { link: "https://github.com/SaiPraneethPegada", name: "Github" },
+    { link: "https://www.linkedin.com/in/sai-praneeth-pegada-psp131199", name: "LinkedIn" },
   ];
 
   return (

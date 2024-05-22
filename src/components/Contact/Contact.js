@@ -53,9 +53,9 @@ export default function Contact() {
   return (
     <>
       <ToastContainer />
-      <div className="m-5">
+      <div className="contactContainer">
         <h1 className="headings text-center">Contact Me</h1>
-        <div className="d-flex justify-content-evenly flex-wrap my-5">
+        <div className="d-flex justify-content-evenly flex-wrap">
           <div className="form-container">
             <form
               ref={form}
@@ -119,7 +119,7 @@ export default function Contact() {
             ))}
           </div>
         </div>
-        <div className="d-flex justify-content-center flex-column flex-wrap align-items-center my-5 py-5">
+        <div className="d-flex justify-content-center flex-column flex-wrap align-items-center m-4 py-5">
           <div>
             <h1 className="text-center py-2">Let's work together!</h1>
             <p className="sizing">

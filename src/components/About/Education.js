@@ -9,7 +9,7 @@ export default function Education() {
   const titles = [
     {
       refer: "#section1",
-      name: "-Education",
+      name: "-Experience",
     },
     {
       refer: "#section2",
@@ -17,7 +17,7 @@ export default function Education() {
     },
     {
       refer: "#section3",
-      name: "-Experience",
+      name: "-Education",
     },
   ];
 
@@ -60,10 +60,17 @@ export default function Education() {
   const workPlace = [
     {
       image: exp,
+      role: "Associate Software Engineer",
+      company: "CodeParva Technologies Pvt. Ltd.",
+      place: "Bangalore, Karnataka.",
+      year: "2023(Jan) - Present.",
+    },
+    {
+      image: exp,
       role: "Reliablity Engineer",
       company: "Cyient Limited",
       place: "Bangalore, Karnataka.",
-      year: "2021(June)-2022(Aug).",
+      year: "2021(June) - 2022(Aug).",
     },
   ];
 
@@ -80,28 +87,24 @@ export default function Education() {
       </div>
       <div className="mt-5 d-flex flex-column flex-wrap align-content-around">
         <div className="main m-3" id="section1">
-          <p style={{ visibility: "hidden" }}>.</p>
-          <br />
-          <h1 className="headings">Education</h1>
-          {schools.map((school, index) => (
+          <h1 className="headings my-5">Experience</h1>
+          {workPlace.map((work, index) => (
             <div key={index}>
-              <div className="eduIconAndTitle mt-5 d-flex align-items-center">
+              <div className="mt-5 d-flex align-items-center">
                 <div className="mx-2 pe-3">
-                  <img src={school.image} alt="icons" />
+                  <img src={work.image} alt="icon" />
                 </div>
                 <div>
-                  <h2 className="degree">{school.degree}</h2>
+                  <h2 className="degree">{work.role}</h2>
                 </div>
               </div>
               <div className="mx-5 px-4">
                 <h5>
-                  {school.name}, {school.place}
+                  {work.company}, {work.place}
                 </h5>
-                <p>{school.course}</p>
-                <p className="sizing">{school.aggregate}</p>
-                <p className="sizing">{school.year}</p>
+                <p className="sizing">{work.year}</p>
               </div>
-              <hr className="w=100" />
+              <hr className="w-100" />
             </div>
           ))}
         </div>
@@ -137,24 +140,28 @@ export default function Education() {
         </div>
 
         <div className="main m-3" id="section3">
-          <h1 className="headings my-5">Experience</h1>
-          {workPlace.map((work, index) => (
+          <p style={{ visibility: "hidden" }}>.</p>
+          <br />
+          <h1 className="headings">Education</h1>
+          {schools.map((school, index) => (
             <div key={index}>
-              <div className="mt-5 d-flex align-items-center">
+              <div className="eduIconAndTitle mt-5 d-flex align-items-center">
                 <div className="mx-2 pe-3">
-                  <img src={work.image} alt="icon" />
+                  <img src={school.image} alt="icons" />
                 </div>
                 <div>
-                  <h2 className="degree">{work.role}</h2>
+                  <h2 className="degree">{school.degree}</h2>
                 </div>
               </div>
               <div className="mx-5 px-4">
                 <h5>
-                  {work.company}, {work.place}
+                  {school.name}, {school.place}
                 </h5>
-                <p className="sizing">{work.year}</p>
+                <p>{school.course}</p>
+                <p className="sizing">{school.aggregate}</p>
+                <p className="sizing">{school.year}</p>
               </div>
-              <hr className="w-100" />
+              <hr className="w=100" />
             </div>
           ))}
         </div>

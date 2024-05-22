@@ -20,7 +20,7 @@ export default function Home() {
               textJustify: "inter-word",
             }}
           >
-            I'm a MERN Stack Developer.{" "}
+            I'm a Software Engineer.{" "}
             <span
               style={{
                 color: "gray",
