@@ -35,7 +35,7 @@ export default function About() {
             >
               I'm a{" "}
               <span style={{ color: "#8ffbf7" }}>Software Engineer</span>{' '}
-              with 3 years of experience, driven by a passion for learning new technologies and tools.
+              with 2.5+ years of experience, driven by a passion for learning new technologies and tools.
               Proficient in JavaScript, with a strong foundation in web development libraries such as ReactJS.
               Adaptable to changing project requirements and excels in dynamic work settings.
               Demonstrated ability to quickly grasp and apply new tools and technologies to achieve project objectives effectively.
