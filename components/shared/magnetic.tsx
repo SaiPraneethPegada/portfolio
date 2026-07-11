@@ -34,7 +34,7 @@ export function Magnetic({
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="inline-block transition-transform duration-200 ease-out"
+      className="inline-block w-fit transition-transform duration-200 ease-out"
     >
       {children}
     </div>

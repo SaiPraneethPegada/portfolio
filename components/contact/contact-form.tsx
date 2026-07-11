@@ -75,7 +75,7 @@ export function ContactForm() {
         ) : null}
       </div>
       <Magnetic>
-        <Button type="submit" disabled={submitting} className="self-start">
+        <Button type="submit" disabled={submitting}>
           {submitting ? <Loader2 className="size-4 animate-spin" /> : <Send className="size-4" />}
           {submitting ? "Sending..." : "Send message"}
         </Button>
