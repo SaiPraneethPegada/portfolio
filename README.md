@@ -17,7 +17,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-Copy `.env.example` to `.env.local` and fill in the EmailJS values for the contact form to work locally.
+Copy `.env.example` to `.env.local` and fill in the EmailJS values for the contact form to work locally. `NEXT_PUBLIC_RESUME_URL` is optional locally — it falls back to the resume link in `lib/content/site.ts` — but set it in Netlify's env vars to swap resumes without a code change.
 
 ## Content
 

@@ -6,7 +6,7 @@ export function ResumeButton({ variant = "default" }: { variant?: "default" | "o
   return (
     <Button
       variant={variant}
-      render={<a href={site.resumeUrl} target="_blank" rel="noreferrer" download />}
+      render={<a href={site.resumeUrl} target="_blank" rel="noreferrer" />}
       nativeButton={false}
     >
       <Download className="size-4" />
