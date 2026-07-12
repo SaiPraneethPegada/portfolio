@@ -12,7 +12,7 @@ export function Bio() {
             alt={site.name}
             width={240}
             height={240}
-            className="rounded-2xl object-cover size-32 sm:size-40 shrink-0"
+            className="rounded-2xl object-cover size-32 sm:size-48 lg:size-72 shrink-0"
             priority
           />
           <div>
