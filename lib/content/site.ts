@@ -10,7 +10,7 @@ export const site = {
     github: "https://github.com/SaiPraneethPegada",
     linkedin: "https://www.linkedin.com/in/sai-praneeth-pegada-psp131199",
   },
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/Sai_Praneeth_Pegada_Resume.pdf",
   emailjs: {
     serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
     templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
