@@ -43,8 +43,8 @@ export const projects: Project[] = [
       {
         heading: "Reliability & Compliance",
         body: [
-          "Built the nightly batch plan-generation service on ECS Fargate with EventBridge scheduling, two-level deduplication, and per-plan token/cost tracking with CloudWatch alarms. Hardened HIPAA compliance across the stack: PHI scrubbing in structured logs, customer-managed KMS encryption, and immutable audit archives.",
-          "Resolved production reliability issues including subprocess-isolated PDF rendering to survive native crashes in nightly batches, and a PDF-processing migration that cut document-processing time roughly 17x.",
+          "Built the nightly batch plan-generation service on ECS Fargate with EventBridge scheduling, two-level deduplication, and per-plan token/cost tracking with CloudWatch alarms. Hardened HIPAA compliance across the stack: PHI scrubbing in structured logs, customer-managed KMS encryption, immutable audit archives, and routing LLM vision calls through Bedrock to keep PHI within the compliance boundary.",
+          "Resolved production reliability issues including subprocess-isolated PDF rendering to survive native crashes in nightly batches, a PDF-processing migration that cut document-processing time roughly 17x, a ~90% reduction in CRM API calls via caching, and direct token streaming that eliminated a duplicate LLM inference per plan.",
         ],
       },
       {
@@ -58,7 +58,6 @@ export const projects: Project[] = [
       "Python",
       "FastAPI",
       "LangGraph",
-      "LangChain",
       "Anthropic Claude",
       "AWS Bedrock",
       "Next.js",
@@ -102,7 +101,7 @@ export const projects: Project[] = [
         ],
       },
     ],
-    tech: ["Python", "SQLAlchemy", "Alembic", "AWS CodeArtifact", "pytest"],
+    tech: ["Python", "SQLAlchemy", "AWS CodeArtifact", "pytest"],
     links: [],
   },
   {

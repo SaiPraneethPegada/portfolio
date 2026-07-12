@@ -33,18 +33,15 @@ export const skills: SkillGroup[] = [
       { name: "FastAPI", featured: true },
       { name: "Pydantic" },
       { name: "SQLAlchemy (async)" },
-      { name: "Alembic" },
       { name: "Django" },
       { name: "REST APIs" },
       { name: "Server-Sent Events" },
-      { name: "Redis" },
     ],
   },
   {
     category: "AI / LLM",
     skills: [
       { name: "LangGraph", featured: true },
-      { name: "LangChain" },
       { name: "Anthropic Claude", featured: true },
       { name: "AWS Bedrock", featured: true },
       { name: "OpenAI" },
@@ -84,6 +81,16 @@ export const skills: SkillGroup[] = [
       { name: "Trivy" },
       { name: "CodeQL" },
       { name: "Git" },
+    ],
+  },
+  {
+    category: "Practices",
+    skills: [
+      { name: "HIPAA/PHI Compliance", featured: true },
+      { name: "Code Review" },
+      { name: "Release Management" },
+      { name: "Technical Design Documentation" },
+      { name: "Mentoring" },
     ],
   },
 ];
