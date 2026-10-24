@@ -3,54 +3,54 @@ import type { Project } from "./types";
 export const projects: Project[] = [
   // ---- Flagship ----
   {
-    slug: "e4l-prometheus",
+    slug: "clinical-ai-platform",
     tier: "flagship",
-    title: "E4L-Prometheus",
-    role: "Core Engineer — Kinwits, for healthcare client bVital / Energy4Life Centers",
+    title: "Clinical AI Platform",
+    role: "Core Engineer — Kinwits, for a US healthcare provider",
     period: "Jul 2025 – Present",
     summary:
-      "A HIPAA-compliant AI platform in production that generates Parkinson's treatment plans from EHR, CRM, and lab data. Top contributor with ~56% of backend and ~68% of frontend commits.",
+      "A HIPAA-compliant AI platform in production that generates treatment plans from EHR, CRM, and lab data.",
     impact: [
-      "119-file LLM provider migration (OpenAI → Anthropic Claude on AWS Bedrock)",
-      "Platform's largest subsystem: a RAG-based supplement recommendation engine, 112 unit tests",
-      "Authored ~30 of the provider-facing app's 43 components",
+      "LLM provider migration (OpenAI → Anthropic Claude) behind a provider-abstraction layer",
+      "Platform's largest subsystem: a RAG-based supplement recommendation engine over a 500+ product catalog",
+      "~17x faster PDF processing and ~90% fewer CRM API calls",
     ],
     sections: [
       {
         heading: "The Platform",
         body: [
-          "E4L-Prometheus generates clinical treatment plans for Parkinson's patients by combining data from an EHR (Cerbo), a CRM (GoHighLevel), and lab results, then running it through an LLM pipeline with a provider-facing review and feedback workflow.",
+          "The platform generates clinical treatment plans by combining data from an EHR (Cerbo), a CRM (GoHighLevel), and lab results, then running it through an LLM pipeline with a provider-facing review and feedback workflow.",
         ],
       },
       {
         heading: "AI Provider Architecture",
         body: [
-          "Led the platform-wide LLM migration from OpenAI to Anthropic Claude on AWS Bedrock: designed a provider-abstraction layer (text, JSON, vision, and structured-output APIs) that became the single integration point for all AI calls, enabling environment-driven provider switching and safe model upgrades — a 119-file refactor.",
+          "Migrated the platform's LLM integration from OpenAI to Anthropic Claude across the codebase, behind a provider-abstraction layer (text, JSON, vision, and structured-output APIs) that enables configuration-driven switching and safe model upgrades.",
         ],
       },
       {
         heading: "RAG Recommendation Engine",
         body: [
-          "Architected a supplement recommendation engine using RAG over AWS Bedrock Knowledge Bases — clinical rules extracted from practitioner transcripts, deterministic pre-LLM selection over a 500+ product catalog with fuzzy matching. It's the platform's largest subsystem, backed by 112 unit tests.",
+          "Architected the supplement-recommendation engine: RAG over AWS Bedrock Knowledge Bases with deterministic pre-LLM selection across a 500+ product catalog. It's the platform's largest subsystem.",
         ],
       },
       {
         heading: "Human-in-the-Loop Feedback",
         body: [
-          "Designed an asynchronous clinician-feedback pipeline (DynamoDB Streams → Lambda → SQS FIFO → LangGraph workers) that classifies provider corrections to AI-generated plans and proposes fixes, with conflict detection and an insights analytics API.",
+          "Designed an asynchronous clinician-feedback pipeline that classifies provider corrections to AI-generated plans and proposes fixes, closing the human-in-the-loop quality cycle.",
         ],
       },
       {
         heading: "Reliability & Compliance",
         body: [
-          "Built the nightly batch plan-generation service on ECS Fargate with EventBridge scheduling, two-level deduplication, and per-plan token/cost tracking with CloudWatch alarms. Hardened HIPAA compliance across the stack: PHI scrubbing in structured logs, customer-managed KMS encryption, immutable audit archives, and routing LLM vision calls through Bedrock to keep PHI within the compliance boundary.",
-          "Resolved production reliability issues including subprocess-isolated PDF rendering to survive native crashes in nightly batches, a PDF-processing migration that cut document-processing time roughly 17x, a ~90% reduction in CRM API calls via caching, and direct token streaming that eliminated a duplicate LLM inference per plan.",
+          "Improved reliability and performance: redesigned lab-result retrieval to read stored results before LLM extraction, sped up PDF processing ~17x, and cut CRM API calls ~90% through caching.",
+          "Hardened HIPAA compliance across the stack: PHI scrubbing in logs, customer-managed encryption, immutable audit archives, and LLM calls routed within the compliance boundary. Rebuilt the backend CI/CD pipeline with required tests, vulnerability scanning and smoke tests.",
         ],
       },
       {
         heading: "Provider-Facing Web App",
         body: [
-          "Designed and built the provider-facing web app in Next.js, TypeScript, and Tailwind CSS: a feedback-management dashboard, AI-insights analytics, scheduled-plan review with one-click EMR write-back, and a WYSIWYG treatment-plan editor with locked clinical sections and version history — authoring roughly 30 of the app's 43 components.",
+          "Built the provider-facing web app in Next.js: a feedback dashboard, AI-insights analytics, scheduled-plan review with one-click EMR write-back, and a rich-text treatment-plan editor with version history.",
         ],
       },
     ],
@@ -61,10 +61,8 @@ export const projects: Project[] = [
       "Anthropic Claude",
       "AWS Bedrock",
       "Next.js",
-      "TypeScript",
       "Tailwind CSS",
       "TanStack Query",
-      "TipTap",
       "DynamoDB",
       "SQS",
       "ECS Fargate",
@@ -75,46 +73,45 @@ export const projects: Project[] = [
 
   // ---- Infrastructure ----
   {
-    slug: "bvital-core",
+    slug: "shared-core-library",
     tier: "infrastructure",
-    title: "bvital-core",
+    title: "Shared Core Library",
     role: "Creator — shared platform library",
     summary:
-      "A shared HIPAA-compliant Python library eliminating code duplication between two production services.",
+      "A shared HIPAA-compliant Python library that removes duplicated code between two production services.",
     impact: [
-      "Unified LLM client, PHI scrubbing, audit logging, metrics, and an async SQLAlchemy ORM layer (~20 models)",
-      "187 tests, CI-gated CalVer releases, published via AWS CodeArtifact",
-      "Consumed by two production services",
+      "Unified LLM client, PHI scrubbing, audit logging, and a shared database layer",
+      "CI-gated releases published via AWS CodeArtifact",
+      "Used by two production services",
     ],
     sections: [
       {
         heading: "Why it exists",
         body: [
-          "Two services had diverged copies of logging, LLM-client, and database code. bvital-core consolidates them into one canonical, versioned, testable package rather than maintained-twice utilities.",
+          "Two services had diverged copies of logging, LLM-client, and database code. The shared library consolidates them into one canonical, versioned, testable package instead of utilities maintained twice.",
         ],
       },
       {
         heading: "What it owns",
         body: [
-          "Unified LLM client (text/JSON/vision/structured outputs), PHI scrubbing, audit logging, metrics, secrets handling, and an async SQLAlchemy database layer with roughly 20 ORM models aligned to the production schema.",
-          "187 tests with no external dependencies (SDKs mocked), CI-gated version bumps, and a GitHub Actions workflow that publishes releases to AWS CodeArtifact.",
+          "A unified LLM client (text, JSON, vision, structured outputs), PHI scrubbing, audit logging, and a shared database layer, released through a CI-gated GitHub Actions workflow to AWS CodeArtifact.",
         ],
       },
     ],
-    tech: ["Python", "SQLAlchemy", "AWS CodeArtifact", "pytest"],
+    tech: ["Python", "AWS CodeArtifact", "GitHub Actions"],
     links: [],
   },
   {
-    slug: "ghl-cerbo-pdq39",
+    slug: "crm-ehr-integration",
     tier: "infrastructure",
-    title: "GHL ↔ Cerbo Integration Service",
-    role: "Creator & primary owner",
+    title: "CRM ↔ EHR Integration Service",
+    role: "Developer & maintainer",
     summary:
       "A serverless integration service bridging a CRM and an EHR, automating patient survey data into clinical encounters.",
     impact: [
       "FastAPI on AWS Lambda, deployed with SAM/CloudFormation",
-      "Automates Parkinson's questionnaire scoring into clinical encounters",
-      "18-metric CloudWatch monitoring dashboard, 3 authentication schemes",
+      "Automates questionnaire scoring and intake-survey notes into clinical encounters",
+      "Processes lab-result webhooks; migrated to the CRM's v3 API",
     ],
     sections: [
       {
@@ -126,7 +123,7 @@ export const projects: Project[] = [
       {
         heading: "The system",
         body: [
-          "Built and own a serverless FastAPI service on AWS Lambda (SAM/CloudFormation): automates Parkinson's questionnaire (PDQ-39) scoring into clinical encounters, processes lab-result webhooks behind three distinct authentication schemes, and ships with an 18-metric CloudWatch monitoring dashboard.",
+          "Built and maintain a serverless FastAPI service on AWS Lambda (SAM/CloudFormation) that scores patient questionnaires, turns intake surveys into structured clinical encounter notes, and processes lab-result webhooks. Most recently migrated to the CRM's v3 API.",
         ],
       },
     ],
@@ -142,18 +139,18 @@ export const projects: Project[] = [
       "Scaffolded the architecture for a patient-facing portal later built out by a five-engineer team.",
     impact: [
       "Next.js 16 / React 19 application scaffold",
-      "Design system (shadcn/ui + Radix), PWA setup, strict CSP",
+      "Design system, PWA setup, strict CSP",
       "AWS Amplify CI/CD pipeline",
     ],
     sections: [
       {
         heading: "Founding the codebase",
         body: [
-          "Scaffolded the Next.js 16 / React 19 application that a five-engineer team later built features on top of: the design system (shadcn/ui + Radix), PWA setup, a strict Content Security Policy, and the AWS Amplify CI/CD pipeline.",
+          "Scaffolded the Next.js 16 / React 19 application that a five-engineer team later built features on top of: the design system, PWA setup, a strict Content Security Policy, and the AWS Amplify CI/CD pipeline.",
         ],
       },
     ],
-    tech: ["Next.js", "React", "shadcn/ui", "AWS Amplify"],
+    tech: ["Next.js", "React", "AWS Amplify"],
     links: [],
   },
 

@@ -9,21 +9,21 @@ import { Reveal } from "@/components/shared/reveal";
 import type { Project } from "@/lib/content/types";
 
 const infraDiagrams: Record<string, { nodes: SimpleFlowNode[]; caption?: string }> = {
-  "bvital-core": {
+  "shared-core-library": {
     nodes: [
-      { label: "Two Production Services", sublabel: "E4L-Prometheus · Patient Portal" },
-      { label: "bvital-core", sublabel: "Shared Python library", accent: true },
+      { label: "Two Production Services", sublabel: "Clinical AI Platform · Patient Portal" },
+      { label: "Shared Core Library", sublabel: "Shared Python library", accent: true },
       { label: "AWS CodeArtifact", sublabel: "Versioned releases" },
     ],
-    caption: "187 tests and CI-gated version bumps run before every release.",
+    caption: "CI-gated version bumps run before every release.",
   },
-  "ghl-cerbo-pdq39": {
+  "crm-ehr-integration": {
     nodes: [
       { label: "GoHighLevel CRM", sublabel: "Surveys · intake forms" },
       { label: "Webhook Service", sublabel: "FastAPI on AWS Lambda", accent: true },
       { label: "Cerbo EHR", sublabel: "Clinical encounters" },
     ],
-    caption: "Also processes Evexia lab-result webhooks, monitored via an 18-metric CloudWatch dashboard.",
+    caption: "Also processes lab-result webhooks.",
   },
   "patient-portal-frontend": {
     nodes: [
@@ -72,7 +72,7 @@ export function CaseStudyDetail({ project }: { project: Project }) {
         <TechBadgeList tech={project.tech} className="flex flex-wrap gap-1.5" />
       </Reveal>
 
-      {project.slug === "e4l-prometheus" ? (
+      {project.slug === "clinical-ai-platform" ? (
         <Reveal delay={60}>
           <PlatformArchitectureDiagram />
         </Reveal>

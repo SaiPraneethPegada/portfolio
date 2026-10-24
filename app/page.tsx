@@ -1,5 +1,4 @@
 import { Hero } from "@/components/home/hero";
-import { HighlightStats } from "@/components/home/highlight-stats";
 import { FeaturedSkills } from "@/components/home/featured-skills";
 
 export default function HomePage() {
@@ -17,7 +16,6 @@ export default function HomePage() {
         />
       </div>
       <Hero />
-      <HighlightStats />
       <FeaturedSkills />
     </>
   );

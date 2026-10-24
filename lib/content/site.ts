@@ -3,7 +3,7 @@ export const site = {
   role: "Software Engineer",
   tagline: "building AI systems that clinicians actually use.",
   url: "https://saipraneeth-portfolio.netlify.app",
-  bio: "Software engineer with 4+ years of experience, including 3+ years shipping production web and AI applications. I like owning systems end to end — from architecture decisions to the code that ships — and right now that means being the top contributor on a HIPAA-compliant clinical AI platform: building Next.js/TypeScript frontends, Python/FastAPI backends, and LangGraph agent pipelines on AWS Bedrock. I've also created two shared infrastructure codebases used across production services, and drive releases, code reviews, and engineering standards across a multi-repo, multi-team codebase.",
+  bio: "Software engineer with 4+ years of professional experience, 3+ in software development, building production web and AI applications. I'm a core engineer on a HIPAA-compliant clinical AI platform, working across Next.js frontends, Python/FastAPI backends and LangGraph agent pipelines on AWS. I've built a shared library used by production services, and I contribute to releases, code reviews and engineering standards across a multi-repo codebase.",
   email: "saipraneethpegada@gmail.com",
   phone: "+91 7989427037",
   social: {
